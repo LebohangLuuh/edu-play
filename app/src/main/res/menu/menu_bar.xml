@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/choose_language">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/Eng_Version"
+                    android:title="@string/english"
+                    android:icon="@drawable/language_24"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/Sesotho_Version"
+                    android:title="@string/sesotho"
+                    android:icon="@drawable/language_24"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/Afr_Version"
+                    android:title="@string/afrikaans"
+                    android:icon="@drawable/language_24"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/Zulu_Version"
+                    android:title="@string/isizulu"
+                    android:icon="@drawable/language_24"
+                    app:showAsAction="ifRoom" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/communication">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/about_App"
+                    android:icon="@drawable/baseline_info_24"
+                    android:title="@string/about"
+                    app:showAsAction="ifRoom" />
+                <item
+                    android:id="@+id/share_App"
+                    android:icon="@drawable/share_24"
+                    android:title="@string/share"
+                    app:showAsAction="ifRoom" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/settings" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/no_Ads"
+                    android:title="@string/remove_ads"
+                    android:icon="@drawable/remove_moderator_24"
+                    app:showAsAction="ifRoom"/>
+                <item
+                    android:id="@+id/exit_App"
+                    android:icon="@drawable/exit_app"
+                    android:title="@string/exit"
+                    app:showAsAction="ifRoom" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

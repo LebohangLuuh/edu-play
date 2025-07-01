@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_Layout"
+    tools:context="Zulu.Zulu_Version"
+    tools:openDrawer="start">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frameLayout"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/days_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/days_foreground"
+            app:flow_verticalGap="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextText_Zulu"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toEndOf="@+id/count_Zulu"
+            app:layout_constraintTop_toTopOf="@+id/count_Zulu"
+            tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/count_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/number_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/editTextText_Zulu"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/editTextText_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/vowels_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/vowels_foreground"
+            app:flow_verticalGap="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/count_Zulu"
+            app:layout_constraintStart_toStartOf="@+id/editTextText_Zulu"
+            app:layout_constraintTop_toTopOf="@+id/count_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/money_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/money_foreground"
+            app:layout_constraintEnd_toStartOf="@+id/days_Zulu"
+            app:layout_constraintStart_toEndOf="@+id/vowels_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/count_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/calendar_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/calender_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/money_Zulu"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/province_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/money_Zulu"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/editTextText_Zulu"
+            android:layout_width="369dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:text="@string/khetha_umsebenzi"
+            android:textAlignment="center"
+            android:textColor="#1565C0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_Zulu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="LabelFor,TextSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/careers_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/career_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/calendar_Zulu"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/seasons_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/alphabets_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/alphabets_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/shapes_Zulu"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/careers_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/colors_Zulu"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/colors_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/colors_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/shapes_Zulu"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/calendar_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/shapes_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/shapes_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/shapes_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/days_Zulu"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/money_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/days_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/province_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/provinces_foreground"
+            app:layout_constraintCircleRadius="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/money_Zulu"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/vowels_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/vowels_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/seasons_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/seasons_foreground"
+            app:layout_constraintEnd_toStartOf="@+id/calendar_Zulu"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/province_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/province_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/phonics_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/phonics_foreground"
+            app:layout_constraintEnd_toStartOf="@+id/careers_Zulu"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/seasons_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/seasons_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/animals_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/animals_foreground"
+            app:layout_constraintCircleRadius="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/phonics_Zulu"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/phonics_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/phonics_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/planets_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/planets_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/careers_Zulu"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/careers_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/careers_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/traffic_Light_Zulu"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/red"
+            android:foreground="@mipmap/robot_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/alphabets_Zulu"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/alphabets_Zulu"
+            app:layout_constraintTop_toBottomOf="@+id/alphabets_Zulu"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            app:title="khetha umsebenzi"
+            app:titleTextColor="@color/blue_Font"
+            android:textAlignment="center"
+            android:id="@+id/toolbar_Zulu"
+            android:background="@color/red"
+            android:elevation="3dp"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view_Zulu"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_bar" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

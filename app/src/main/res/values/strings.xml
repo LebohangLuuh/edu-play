@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Edu-Play</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="english">English</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="communication">Communication</string>
+    <string name="about">About</string>
+    <string name="isizulu">IsiZulu</string>
+    <string name="share">Share</string>
+    <string name="d" />
+    <string name="exit">Exit</string>
+    <string name="sesotho">Sesotho</string>
+    <string name="afrikaans">Afrikaans</string>
+    <string name="rate_us">Rate us</string>
+    <string name="h" />
+    <string name="s" />
+    <string name="choose_an_activity">Choose an activity</string>
+    <string name="edu_play_2023">EDU-PLAY | 2023 | ©</string>
+    <string name="edu_play_is_an_application_designed_specifically_for_toddlers_aimed_at_helping_them_learn_various_activities_in_a_fun_and_interactive_way_the_app_offers_a_variety_of_games_and_educational_content_that_are_specifically_tailored_to_the_needs_and_interests_of_young_children_with_its_colorful_and_engaging_interface_edu_play_provides_a_safe_and_stimulating_environment_for_toddlers_to_explore_and_learn_while_also_fostering_their_creativity_and_problem_solving_skills_whether_it_s_learning_the_alphabet_numbers_shapes_or_colors_edu_play_offers_a_comprehensive_and_enjoyable_learning_experience_for_young_children">Edu-Play is an application designed specifically for toddlers, aimed at helping them learn various activities in a fun and interactive way. The app offers a variety of games and educational content that are specifically tailored to the needs and interests of young children. With its colorful and engaging interface, Edu-Play provides a safe and stimulating environment for toddlers to explore and learn, while also fostering their creativity and problem-solving skills. Whether it\'s learning the alphabet, numbers, shapes, or colors, Edu-Play offers a comprehensive and enjoyable learning experience for young children.</string>
+    <string name="todo">TODO</string>
+    <string name="v_1_0_0">V 1 . 0 . 0</string>
+    <string name="edu_play">Edu-Play</string>
+    <string name="khetha_umsebenzi">Khetha umsebenzi</string>
+    <string name="settings">Settings</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="play">Play</string>
+    <string name="letter_description">Letter description</string>
+    <string name="letter">Letter</string>
+    <string name="whatsapp">WHATSAPP</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="Whatsapp">WHATSAPP</string>
+    <string name="Facebook">FACEBOOK</string>
+
+</resources>

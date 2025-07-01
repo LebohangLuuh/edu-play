@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/drawer_Layout"
+    tools:context="Sesotho.Sesotho_Version"
+    tools:openDrawer="start">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/brown">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/frameLayout"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/days_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/days_foreground"
+            app:flow_verticalGap="2dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextText_Sotho"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toEndOf="@+id/count_Sotho"
+            app:layout_constraintTop_toTopOf="@+id/count_Sotho"
+            tools:ignore="DuplicateSpeakableTextCheck,SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/count_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/number_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/editTextText_Sotho"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="@+id/editTextText_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/vowels_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/vowels_foreground"
+            app:flow_verticalGap="2dp"
+            app:layout_constraintEnd_toStartOf="@+id/count_Sotho"
+            app:layout_constraintStart_toStartOf="@+id/editTextText_Sotho"
+            app:layout_constraintTop_toTopOf="@+id/count_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/money_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/money_foreground"
+            app:layout_constraintEnd_toStartOf="@+id/days_Sotho"
+            app:layout_constraintStart_toEndOf="@+id/vowels_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/count_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/calendar_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/calender_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/money_Sotho"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/province_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/money_Sotho"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/editTextText_Sotho"
+            android:layout_width="369dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            android:text="@string/choose_an_activity"
+            android:textAlignment="center"
+            android:textColor="#1565C0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/toolbar_Sotho"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04"
+            tools:ignore="LabelFor,TextSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/careers_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/career_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/calendar_Sotho"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/seasons_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/alphabets_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/alphabets_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/shapes_Sotho"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/careers_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/colors_Sotho"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/colors_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/colors_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/shapes_Sotho"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/calendar_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/shapes_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/shapes_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/shapes_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/days_Sotho"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/money_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/days_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/province_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/provinces_foreground"
+            app:layout_constraintCircleRadius="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/money_Sotho"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/vowels_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/vowels_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/seasons_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/seasons_foreground"
+            app:layout_constraintEnd_toStartOf="@+id/calendar_Sotho"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/province_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/province_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/phonics_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/phonics_foreground"
+            app:layout_constraintEnd_toStartOf="@+id/careers_Sotho"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/seasons_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/seasons_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/animals_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/animals_foreground"
+            app:layout_constraintCircleRadius="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/phonics_Sotho"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/phonics_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/phonics_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/planets_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/planets_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/careers_Sotho"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/careers_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/careers_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageButton
+            android:id="@+id/traffic_Light_Sotho"
+            android:layout_width="110dp"
+            android:layout_height="149dp"
+            android:backgroundTint="@color/brown"
+            android:foreground="@mipmap/robot_foreground"
+            app:layout_constraintEnd_toEndOf="@+id/alphabets_Sotho"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/alphabets_Sotho"
+            app:layout_constraintTop_toBottomOf="@+id/alphabets_Sotho"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            app:title="Kgetha thuto "
+            app:titleTextColor="@color/blue_Font"
+            android:textAlignment="center"
+            android:id="@+id/toolbar_Sotho"
+            android:background="@color/brown"
+            android:elevation="3dp"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view_Sotho"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu_bar" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

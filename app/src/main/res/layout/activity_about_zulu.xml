@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red">
+
+
+    <TextView
+        android:id="@+id/editTextText3"
+        android:layout_width="375dp"
+        android:layout_height="366dp"
+        android:ems="10"
+        android:text="@string/edu_play_is_an_application_designed_specifically_for_toddlers_aimed_at_helping_them_learn_various_activities_in_a_fun_and_interactive_way_the_app_offers_a_variety_of_games_and_educational_content_that_are_specifically_tailored_to_the_needs_and_interests_of_young_children_with_its_colorful_and_engaging_interface_edu_play_provides_a_safe_and_stimulating_environment_for_toddlers_to_explore_and_learn_while_also_fostering_their_creativity_and_problem_solving_skills_whether_it_s_learning_the_alphabet_numbers_shapes_or_colors_edu_play_offers_a_comprehensive_and_enjoyable_learning_experience_for_young_children"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/Version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/v_1_0_0"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+        app:layout_constraintVertical_bias="0.903"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edu_play_2023"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Version"
+        app:layout_constraintVertical_bias="0.883"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/Face_Book"
+        android:layout_width="83dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="72dp"
+        android:background="@color/red"
+        android:foreground="@mipmap/fb_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/Version"
+        app:layout_constraintStart_toStartOf="@+id/editTextText3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+        app:layout_constraintVertical_bias="0.545"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/whats_App"
+        android:layout_width="74dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/red"
+        android:foreground="@mipmap/app_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/Version"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText3"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toEndOf="@+id/Face_Book"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+        app:layout_constraintVertical_bias="0.589"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edu_play"
+        android:textSize="35dp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FACEBOOK"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/Version"
+        app:layout_constraintEnd_toEndOf="@+id/Face_Book"
+        app:layout_constraintStart_toStartOf="@+id/Face_Book"
+        app:layout_constraintTop_toBottomOf="@+id/Face_Book"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WHATSAPP"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/Version"
+        app:layout_constraintEnd_toEndOf="@+id/whats_App"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/whats_App"
+        app:layout_constraintTop_toBottomOf="@+id/whats_App"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

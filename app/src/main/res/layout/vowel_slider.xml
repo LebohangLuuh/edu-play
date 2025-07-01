@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vowel_Slider"
+    android:layout_width="match_parent"
+    android:layout_height="590dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/vowel_img_slider"
+        android:layout_width="411dp"
+        android:layout_height="590dp"
+        android:importantForAccessibility="no" />
+
+</LinearLayout>

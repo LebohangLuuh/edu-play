@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_edu_play"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_edu_play_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EduPlay"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.English.Vowel_Eng"
+            android:exported="false" />
+        <activity
+            android:name="com.example.English.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Zulu.Vowels_Zulu" />
+        <activity android:name="Afrikaans.About_Afr" />
+        <activity android:name="Afrikaans.Afrikaans_Version" />
+        <activity android:name="Afrikaans.Alphabets_Afr" />
+        <activity android:name="Afrikaans.Animals_Afr" />
+        <activity android:name="Afrikaans.Calender_Afr" />
+        <activity android:name="Afrikaans.Career_Afr" />
+        <activity android:name="Afrikaans.Colors_Afr" />
+        <activity android:name="Afrikaans.Money_Afr" />
+        <activity android:name="Afrikaans.Numbers_Afr" />
+        <activity android:name="Afrikaans.Phonics_Afr" />
+        <activity android:name="Afrikaans.Planets_Afr" />
+        <activity android:name="Afrikaans.Provinces_Afr" />
+        <activity android:name="Afrikaans.Seasons_Afr" />
+        <activity android:name="Afrikaans.Shapes_Afr" />
+        <activity android:name="Afrikaans.Traffic_Light_Afr" />
+        <activity android:name="Afrikaans.Vowels_Afr" />
+        <activity android:name="Afrikaans.Weekdays_Afr" />
+        <activity android:name="com.example.English.About" />
+        <activity android:name="com.example.English.Alphabets" />
+        <activity android:name="com.example.English.Animals" />
+        <activity android:name="com.example.English.Calender" />
+        <activity android:name="com.example.English.Careers" />
+        <activity android:name="com.example.English.Colors" />
+        <activity android:name="com.example.English.Money" />
+        <activity android:name="com.example.English.Numbers" />
+        <activity android:name="com.example.English.Phonics" />
+        <activity android:name="com.example.English.Planets" />
+        <activity android:name="com.example.English.Provinces" />
+        <activity android:name="com.example.English.Shapes" />
+        <activity android:name="com.example.English.Traffic_Light" />
+        <activity android:name="com.example.English.Weekdays" />
+        <activity android:name="com.example.English.Year_Seasons" />
+        <activity android:name="Sesotho.About_Sotho" />
+        <activity android:name="Sesotho.Alphabets_Sotho" />
+        <activity android:name="Sesotho.Animals_Sotho" />
+        <activity android:name="Sesotho.Calender_Sotho" />
+        <activity android:name="Sesotho.Career_Sotho" />
+        <activity android:name="Sesotho.Colors_Sotho" />
+        <activity android:name="Sesotho.Money_Sotho" />
+        <activity android:name="Sesotho.Numbers_Sotho" />
+        <activity android:name="Sesotho.Phonics_Sotho" />
+        <activity android:name="Sesotho.Planets_Sotho" />
+        <activity android:name="Sesotho.Provinces_Sotho" />
+        <activity android:name="Sesotho.Seasons_Sotho" />
+        <activity android:name="Sesotho.Shapes_Sotho" />
+        <activity android:name="Sesotho.Traffic_Light_Sotho" />
+        <activity android:name="Sesotho.Vowels_Sotho" />
+        <activity android:name="Sesotho.Weekdays_Sotho" />
+        <activity android:name="Sesotho.Sesotho_Version" />
+        <activity android:name="Zulu.About_Zulu" />
+        <activity android:name="Zulu.Alphabets_Zulu" />
+        <activity android:name="Zulu.Animals_Zulu" />
+        <activity android:name="Zulu.Calender_Zulu" />
+        <activity android:name="Zulu.Careers_Zulu" />
+        <activity android:name="Zulu.Colors_Zulu" />
+        <activity android:name="Zulu.Money_Zulu" />
+        <activity android:name="Zulu.Numbers_Zulu" />
+        <activity android:name="Zulu.Phonics_Zulu" />
+        <activity android:name="Zulu.Planets_Zulu" />
+        <activity android:name="Zulu.Provinces_Zulu" />
+        <activity android:name="Zulu.Seasons_Zulu" />
+        <activity android:name="Zulu.Shapes_Zulu" />
+        <activity android:name="Zulu.Traffic_Light_Zulu" />
+        <activity android:name="Zulu.Weekdays_Zulu" />
+        <activity android:name="Zulu.Zulu_Version" />
+    </application>
+
+</manifest>
