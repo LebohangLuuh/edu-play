@@ -23,57 +23,88 @@ import Sesotho.Sesotho_Version;
 import Zulu.Zulu_Version;
 
 public class MainActivity extends AppCompatActivity {
-    MediaPlayer startupSong;
-    DrawerLayout drawerLayout;
-    NavigationView navigationView;
-    Toolbar toolbar;
+    private MediaPlayer startupSong;
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
+    private Toolbar toolbar;
 
     private List<Activity> openActivities;
 
-    private void  StartupSong()
-    {
-        startupSong = MediaPlayer.create(this, R.raw.stimela);
-        startupSong.setOnCompletionListener(mp -> startupSong.release());
-        startupSong.start();
+    private void startupSong() {
+        if (startupSong == null) {
+            startupSong = MediaPlayer.create(this, R.raw.stimela);
+            startupSong.setOnCompletionListener(mp -> {
+                if (startupSong != null) {
+                    startupSong.release();
+                    startupSong = null;
+                }
+            });
+        }
+
+        if (startupSong != null && !startupSong.isPlaying()) {
+            startupSong.start();
+        }
     }
 
     public void closeApp() {
-        for (Activity activity : openActivities) {
-            if (activity != null) {
-                activity.finish();
+        if (openActivities != null) {
+            for (Activity activity : openActivities) {
+                if (activity != null && !activity.isFinishing()) {
+                    activity.finish();
+                }
             }
+            openActivities.clear();
         }
-        openActivities.clear();
+
+        if (startupSong != null) {
+            startupSong.release();
+            startupSong = null;
+        }
     }
 
     @Override
-    protected  void onDestroy()
-    {
+    protected void onDestroy() {
+        if (startupSong != null) {
+            startupSong.release();
+            startupSong = null;
+        }
+
+        if (openActivities != null) {
+            openActivities.remove(this);
+        }
+
         super.onDestroy();
-        openActivities.remove(this);
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        StartupSong();
+        startupSong();
     }
 
     @Override
-    protected void onPause()
-    {
+    protected void onPause() {
         super.onPause();
-        startupSong.pause();
+        if (startupSong != null && startupSong.isPlaying()) {
+            startupSong.pause();
+        }
     }
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
         new AlertDialog.Builder(MainActivity.this)
-                .setMessage("Exit the App?").setCancelable(false)
-                .setPositiveButton("Yes", (dialog, which) -> System.exit(0)).setNegativeButton("No",null).show();
-        startupSong.release();
-       // super.onBackPressed();
+                .setMessage("Exit the App?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", (dialog, which) -> {
+                    if (startupSong != null) {
+                        startupSong.release();
+                        startupSong = null;
+                    }
+                    finishAffinity(); // Better than System.exit(0)
+                })
+                .setNegativeButton("No", null)
+                .show();
+        // Don't call super.onBackPressed() here to prevent closing before user chooses
     }
 
     @Override
@@ -99,14 +130,23 @@ public class MainActivity extends AppCompatActivity {
             {
                 Intent intent = new Intent(MainActivity.this, About.class);
                 startActivity(intent);
-                startupSong.stop();
+                if (startupSong != null) {
+                    startupSong.pause(); // Use pause instead of stop
+                }
             } else if (menuItem.getItemId() == R.id.exit_App)
             {
                 new AlertDialog.Builder(MainActivity.this)
-                        .setMessage("Exit the App?").setCancelable(false)
-                        .setPositiveButton("Yes", (dialog, which) -> finishAffinity())
-                        .setNegativeButton("No",null).show();
-                startupSong.stop();
+                        .setMessage("Exit the App?")
+                        .setCancelable(false)
+                        .setPositiveButton("Yes", (dialog, which) -> {
+                            if (startupSong != null) {
+                                startupSong.release();
+                                startupSong = null;
+                            }
+                            finishAffinity();
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
             }
             else if (menuItem.getItemId() == R.id.share_App)
             {
@@ -161,16 +201,18 @@ public class MainActivity extends AppCompatActivity {
         ImageButton buttonPlanets = findViewById(R.id.planets);
 
         buttonVowels.setOnClickListener(v -> {
-
             Intent intent = new Intent(MainActivity.this, Vowel_Eng.class);
             startActivity(intent);
-            startupSong.stop();
+            if (startupSong != null) {
+                startupSong.pause(); // Use pause instead of stop for better resource management
+            }
         });
         buttonDays.setOnClickListener(v -> {
-
             Intent intentDays = new Intent(MainActivity.this, Weekdays.class);
             startActivity(intentDays);
-            startupSong.stop();
+            if (startupSong != null) {
+                startupSong.pause(); // Use pause instead of stop
+            }
         });
         buttonMoney.setOnClickListener(v -> {
 

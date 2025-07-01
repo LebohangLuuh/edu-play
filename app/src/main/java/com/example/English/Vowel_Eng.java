@@ -10,8 +10,8 @@ import com.example.edu_play.R;
 
 public class Vowel_Eng extends AppCompatActivity {
 
-    ViewPager viewPager;
-    Slider_Adaptor adaptor;
+    private ViewPager viewPager;
+    private Slider_Adaptor adaptor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

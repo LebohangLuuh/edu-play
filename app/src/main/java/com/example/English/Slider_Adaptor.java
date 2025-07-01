@@ -15,10 +15,10 @@ import com.example.edu_play.R;
 
 public class Slider_Adaptor extends PagerAdapter {
 
-    Context context;
-    LayoutInflater layoutInflater;
+    private final Context context;
+    private LayoutInflater layoutInflater;
 
-    public int[] list_Images = new int[]{
+    public final int[] list_Images = new int[]{
             R.drawable.aa,
             R.drawable.ee,
             R.drawable.ii,
@@ -57,7 +57,9 @@ public class Slider_Adaptor extends PagerAdapter {
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        if (layoutInflater == null) {
+            layoutInflater = LayoutInflater.from(context);
+        }
         View view = layoutInflater.inflate(R.layout.vowel_slider, container, false);
         LinearLayout linearLayout = view.findViewById(R.id.vowel_Slider);
         ImageView imageView = view.findViewById(R.id.vowel_img_slider);

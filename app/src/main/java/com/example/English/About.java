@@ -16,20 +16,30 @@ public class About extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-        ImageButton buttonFace_Book = findViewById(R.id.Face_Book);
+        ImageButton buttonFaceBook = findViewById(R.id.Face_Book);
         ImageButton buttonApp = findViewById(R.id.whats_App);
 
         buttonApp.setOnClickListener(v -> {
-            String url_App = "https://chat.whatsapp.com/I7Ni1m74Nfk8LKTHOCAasu";
+            String urlApp = "https://chat.whatsapp.com/I7Ni1m74Nfk8LKTHOCAasu";
             Intent intentApp = new Intent(Intent.ACTION_VIEW);
-            intentApp.setData(Uri.parse(url_App));
-            startActivity(intentApp);
+            intentApp.setData(Uri.parse(urlApp));
+            try {
+                startActivity(intentApp);
+            } catch (Exception e) {
+                // Handle case where no app can handle this intent
+                e.printStackTrace();
+            }
         });
-        buttonFace_Book.setOnClickListener(v -> {
-            String url_FB = "https://www.fb.com/profile.php?id=100095021507007";
-            Intent intent_FB = new Intent(Intent.ACTION_VIEW);
-            intent_FB.setData(Uri.parse(url_FB));
-            startActivity(intent_FB);
+        buttonFaceBook.setOnClickListener(v -> {
+            String urlFB = "https://www.fb.com/profile.php?id=100095021507007";
+            Intent intentFB = new Intent(Intent.ACTION_VIEW);
+            intentFB.setData(Uri.parse(urlFB));
+            try {
+                startActivity(intentFB);
+            } catch (Exception e) {
+                // Handle case where no app can handle this intent
+                e.printStackTrace();
+            }
         });
     }
 }
